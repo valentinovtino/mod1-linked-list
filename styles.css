@@ -1,0 +1,9 @@
+.left-side {
+	background-color: #455A64;
+	width: 50%;
+	height: 100vh;
+}
+
+.container {
+	margin: auto;
+}
