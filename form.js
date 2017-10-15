@@ -1,8 +1,11 @@
 var readBtn = $('.read-btn');
+var deleteBtn = $('.delete-btn');
+var card = $('.bookmark-cards');
 
 
 $('.user-submit').on('click', displayCard);
 $('.right-side').on('click', readBtn, markRead);
+$('.right-side').on('click', deleteBtn, deleteCard);
 
 function displayCard() {
 	var title = $('.website-title')[0].value;
@@ -19,6 +22,9 @@ function displayCard() {
 }
 
 function markRead() {
-	console.log('working');
  $('.read-btn').hasClass('read') === true ? $('.read-btn').removeClass('read'): $('.read-btn').addClass('read'); //Why doesn't global var work when targetting.
+}
+
+function deleteCard() {
+	$(this).parents('.bookmark-cards').remove()
 }
