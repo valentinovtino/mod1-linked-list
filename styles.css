@@ -1,3 +1,24 @@
+body {
+  margin: 0;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+h1 {
+  color: #FFFFFF;
+  font-size: 80px;
+  margin-top: 0px;
+}
+
+button {
+  background-color: #FFC107;
+  border-style: none;
+  font-family: 'Open-Sans', sans-serif;
+}
+
+button:hover {
+  background-color: #FFD773;
+}
+
 .left-side {
 	background-color: #455A64;
 	width: 50%;
@@ -7,3 +28,12 @@
 .container {
 	margin: auto;
 }
+
+.logo {
+  width: 80px;
+}
+
+#website-input {
+  
+}
+
