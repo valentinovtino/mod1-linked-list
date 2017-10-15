@@ -6,13 +6,19 @@ body {
 h1 {
   color: #FFFFFF;
   font-size: 80px;
-  margin-top: 0px;
+  margin-top: 0px auto 10px;
+  display: inline-block;
 }
 
 button {
+  color: #FFFFFF;
   background-color: #FFC107;
   border-style: none;
   font-family: 'Open-Sans', sans-serif;
+  font-size: 20px;
+  margin: 0px auto 34px;
+  width: 643px;
+  height: 40px;
 }
 
 button:hover {
@@ -30,10 +36,16 @@ button:hover {
 }
 
 .logo {
-  width: 80px;
+  width: 100px;
 }
 
-#website-input {
-  
+.website-input {
+  width: 643px;
+  height: 40px;
+  display: block;
+  margin: 50px auto 50px;
+  padding: 2px 0px 5px 10px;
+  font-size: 26px;
+  letter-spacing: 1.3px;
 }
 
