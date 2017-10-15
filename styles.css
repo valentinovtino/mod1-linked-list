@@ -14,7 +14,11 @@ h1 {
 
 }
 
-button {
+h2 {
+	margin-top: 0px;
+}
+
+.user-submit {
   position: relative;
   left: 4%;
   color: #FFFFFF;
@@ -28,7 +32,7 @@ button {
   height: 40px;
 }
 
-button:hover {
+.user-submit:hover {
   background-color: #FFD773;
 }
 
@@ -37,6 +41,14 @@ button:hover {
 	width: 50%;
 	height: 100vh;
   position: absolute;
+}
+
+.right-side {
+	background-color: #CFD8DC;
+	width: 50%;
+	height: 100vh;
+	/*floats are evil*/
+	float: right;
 }
 
 .container {
@@ -64,4 +76,46 @@ button:hover {
 .website-input::placeholder {
   color: #BBBDBF;
 }
+
+.bookmark-cards {
+	background-color: #FFFFFF;
+	border: 1px solid #607D8B;
+	margin: 25px 25px 30px 25px;
+	padding: 10px 20px;
+}
+
+.delete-btn {
+	float: right;
+}
+
+.bookmark-btn {
+	border: none;
+	color: #455A64;
+	font-family: 'Open-Sans', sans-serif;
+	background-color: transparent;
+	text-decoration: underline;
+	text-decoration-color: #F2F4F4;
+}
+
+.bookmark-btn:hover {
+	font-weight: 800;
+	text-decoration-color: #FFC107;
+}
+
+.bookmark-content {
+	color: #455A64;
+
+}
+
+.bookmark-content-url {
+	color: #607D8B;
+	text-decoration: underline;
+	text-decoration-color: #F2F4F4;
+}
+
+.bookmark-content-url:hover {
+	font-weight: 800;
+	text-decoration-color: #FFC107;
+}
+
 
