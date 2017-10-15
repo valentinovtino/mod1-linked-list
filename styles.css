@@ -4,20 +4,27 @@ body {
 }
 
 h1 {
+  position: relative;
+  left: 3%;
+  top: 10px;
+  margin: 10px 3px 10px;
   color: #FFFFFF;
-  font-size: 80px;
-  margin-top: 0px auto 10px;
+  font-size:101px;
   display: inline-block;
+
 }
 
 button {
+  position: relative;
+  left: 4%;
   color: #FFFFFF;
   background-color: #FFC107;
   border-style: none;
   font-family: 'Open-Sans', sans-serif;
   font-size: 20px;
+  font-weight: 800;
   margin: 0px auto 34px;
-  width: 643px;
+  width: 662px;
   height: 40px;
 }
 
@@ -29,10 +36,13 @@ button:hover {
 	background-color: #455A64;
 	width: 50%;
 	height: 100vh;
+  position: absolute;
 }
 
 .container {
-	margin: auto;
+	/*margin: auto;*/
+  position: relative;
+  top: 20%;
 }
 
 .logo {
@@ -40,12 +50,18 @@ button:hover {
 }
 
 .website-input {
-  width: 643px;
+  position: relative;
+  left: 0%;
+  width: 647px;
   height: 40px;
   display: block;
   margin: 50px auto 50px;
   padding: 2px 0px 5px 10px;
   font-size: 26px;
   letter-spacing: 1.3px;
+}
+
+.website-input::placeholder {
+  color: #BBBDBF;
 }
 
