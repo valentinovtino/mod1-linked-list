@@ -36,6 +36,10 @@ h2 {
   background-color: #FFD773;
 }
 
+.user-submit:disabled {
+	background-color: #F05A28;
+}
+
 .left-side {
 	background-color: #455A64;
 	width: 50%;
@@ -121,6 +125,8 @@ h2 {
 .read {
 	color: #F05A28;
 }
+
+
 
 
 
