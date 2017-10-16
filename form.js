@@ -7,8 +7,8 @@ $('.user-submit').on('click', displayCard);
 
 
 function displayCard() {
-	var title = $('.website-title')[0].value;
-	var url = $('.website-url')[0].value;
+	var title = $('.website-title')val();
+	var url = $('.website-url').val();
 	$('.right-side').append(`
 		<article class="bookmark-cards ${title}">
 			<h2 class="bookmark-content">${title}</h2>
