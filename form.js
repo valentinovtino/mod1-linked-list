@@ -4,21 +4,22 @@ var card = $('.bookmark-cards');
 
 
 $('.user-submit').on('click', displayCard);
-$('.right-side').on('click', readBtn, markRead);
-$('.right-side').on('click', deleteBtn, deleteCard);
+
 
 function displayCard() {
 	var title = $('.website-title')[0].value;
 	var url = $('.website-url')[0].value;
 	$('.right-side').append(`
-		<article class="bookmark-cards">
+		<article class="bookmark-cards ${title}">
 			<h2 class="bookmark-content">${title}</h2>
 			<hr />
 			<p class="bookmark-content-url">${url}</p>
 			<hr />
 			<button class="bookmark-btn read-btn">Read</button>
 			<button class="delete-btn bookmark-btn">Delete</button>
-		</article>`)
+		</article>`);
+  $('.read-btn').on('click', markRead);
+  $('.delete-btn').on('click', deleteCard);
 }
 
 function markRead() {
