@@ -15,7 +15,7 @@ h1 {
 }
 
 h2 {
-	margin-top: 0px;
+	margin-top: 0em;
 }
 
 .user-submit {
@@ -85,8 +85,8 @@ h2 {
 .bookmark-cards {
 	background-color: #FFFFFF;
 	border: 1px solid #607D8B;
-	margin: 0em 25px 30px 25px;
-	padding: 10px 20px;
+	margin: 0em 1.2em 1.4em 1.2em;
+	padding: 0.6em 1.2em;
 }
 
 .delete-btn {
