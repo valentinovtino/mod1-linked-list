@@ -1,11 +1,7 @@
-var readBtn = $('.read-btn');
-var deleteBtn = $('.delete-btn');
-var card = $('.bookmark-cards');
 
-
-  
 $('.user-submit').on('click', displayError);
 $('.website-input').on('keyup', disableBtn);
+$('.user-submit').on('click', displayNumberOfCards);
 
 function displayError() {
 	if($('.website-title').val() === "" || $('.website-url').val() === "") {
@@ -14,9 +10,11 @@ function displayError() {
 	}
 };
 
+
 function displayCard() {
 	var title = $('.website-title').val();
 	var url = $('.website-url').val();
+	cardCounter = $('.bookmark-cards').length;
 	$('.right-side').append(`
 		<article class="bookmark-cards ${title}">
 			<h2 class="bookmark-content">${title}</h2>
@@ -36,6 +34,7 @@ function markRead() {
 
 function deleteCard() {
 	$(this).parents('.bookmark-cards').remove();
+	$('.number-of-cards').html($('.bookmark-cards').length);
 };
 
 function disableBtn() {
@@ -44,6 +43,11 @@ function disableBtn() {
 	} else {$('.user-submit').removeAttr('disabled');
 	}
 };
+
+function displayNumberOfCards() {
+	$('.number-of-cards').html($('.bookmark-cards').length);
+	// console.log($('.bookmark-cards').length)
+}
 
 
 
