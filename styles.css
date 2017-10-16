@@ -6,7 +6,7 @@ body {
 h1 {
   position: relative;
   left: 3%;
-  top: 10px;
+  top: 0em;
   margin: 10px 3px 10px;
   color: #FFFFFF;
   font-size:101px;
@@ -47,8 +47,8 @@ h2 {
 	background-color: #CFD8DC;
 	width: 50%;
 	height: 100vh;
-	/*floats are evil*/
-	float: right;
+	margin-left: auto;
+  position: relative;
 }
 
 .container {
@@ -64,7 +64,7 @@ h2 {
 .website-input {
   position: relative;
   left: 0%;
-  width: 647px;
+  width: 626px;
   height: 40px;
   display: block;
   margin: 50px auto 50px;
@@ -82,10 +82,11 @@ h2 {
 	border: 1px solid #607D8B;
 	margin: 25px 25px 30px 25px;
 	padding: 10px 20px;
+  position: absolute;
 }
 
 .delete-btn {
-	float: right;
+	margin-left: 541px;
 }
 
 .bookmark-btn {
