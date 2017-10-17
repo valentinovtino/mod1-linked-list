@@ -67,9 +67,8 @@ h3 {
 }
 
 .container {
-	/*margin: auto;*/
   position: relative;
-  top: 20%;
+  top: 9%;
 }
 
 .logo {
@@ -141,20 +140,29 @@ h3 {
 .bookmark-interactions {
   top: 0em;
   width: 45em;
-  height: 5em;
+  height: 7em;
   background-color: #F2F4F4;
 }
 
 .bookmark-info {
   display: inline-block;
-  font-size: 1.1em;
+  font-size: 1.4em;
+  margin-left: 2em;
+  margin-top: 1.5em;
+  color: #455A64;
 }
 
 button.bookmark-info {
   left: 59em;
   top: 2em;
+  border: none;
+  background-color: #FFC107;
+  color: #FFFFFF;
 }
 
+.cards-read {
+  color: #F05A28;
+}
 
 
 
