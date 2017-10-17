@@ -18,6 +18,16 @@ h2 {
 	margin-top: 0em;
 }
 
+h3 {
+  background-color: #4A3B4A;
+  color: #FFFFFF;
+  height: 6em;
+  width: 39em;
+  left: 0em;
+  position: absolute;
+  margin-top: -7.1em;
+}
+
 .user-submit {
   position: relative;
   left: 1.1em;
@@ -43,17 +53,17 @@ h2 {
 .left-side {
 	background-color: #455A64;
 	width: 50%;
-	height: 100vh;
+	height: 100vw;
   position: absolute;
 }
 
 .right-side {
 	background-color: #CFD8DC;
 	width: 50%;
-	height: 100vh;
-	margin-left: auto;
-  position: relative;
-  padding: 1.3em 0em 0em 0em;
+	height: 100vw;
+	right: 0;
+  position: absolute;
+  padding: 0em 0em 0em 0em;
 }
 
 .container {
@@ -85,7 +95,7 @@ h2 {
 .bookmark-cards {
 	background-color: #FFFFFF;
 	border: 1px solid #607D8B;
-	margin: 0em 1.2em 1.4em 1.2em;
+	margin: 1em 1.2em 1.4em 1.2em;
 	padding: 0.6em 1.2em;
 }
 
@@ -125,8 +135,25 @@ h2 {
 
 .read {
 	color: #F05A28;
+  background-color: #F2F4F4;
 }
 
+.bookmark-interactions {
+  top: 0em;
+  width: 45em;
+  height: 5em;
+  background-color: #F2F4F4;
+}
+
+.bookmark-info {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+button.bookmark-info {
+  left: 59em;
+  top: 2em;
+}
 
 
 

@@ -49,6 +49,8 @@ function displayNumberOfCards() {
 }
 
 
+//card counter is not declared using var, is that ok???
+
 
 
 
