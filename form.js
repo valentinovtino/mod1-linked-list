@@ -14,7 +14,6 @@ function displayError() {
 function displayCard() {
 	var title = $('.website-title').val();
 	var url = $('.website-url').val();
-	cardCounter = $('.bookmark-cards').length;
 	$('.right-side').append(`
 		<article class="bookmark-cards ${title}">
 			<h2 class="bookmark-content">${title}</h2>
@@ -30,11 +29,13 @@ function displayCard() {
 function markRead() {
 	console.log(this)
  $(this).toggleClass('read'); //Why doesn't global var work when targetting.
+ $('.cards-read').html($('.read').length);
 };
 
 function deleteCard() {
 	$(this).parents('.bookmark-cards').remove();
 	$('.number-of-cards').html($('.bookmark-cards').length);
+	$('.cards-read').html($('.read').length);
 };
 
 function disableBtn() {
