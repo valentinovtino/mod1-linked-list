@@ -1,15 +1,15 @@
-
+  
 $('.user-submit').on('click', displayError);
 $('.website-input').on('keyup', disableBtn);
 $('.user-submit').on('click', displayNumberOfCards);
-
+$('.right-side').on('click', '.read-btn', markRead);
+$('.right-side').on('click', '.delete-btn', deleteCard);
 function displayError() {
 	if($('.website-title').val() === "" || $('.website-url').val() === "") {
 		alert('Please enter valid Title and URL!');
 	}	else { displayCard();
 	}
 };
-
 
 function displayCard() {
 	var title = $('.website-title').val();
@@ -24,12 +24,12 @@ function displayCard() {
 			<button class="bookmark-btn read-btn">Read</button>
 			<button class="delete-btn bookmark-btn">Delete</button>
 		</article>`);
-  $('.read-btn').on('click', markRead);
-  $('.delete-btn').on('click', deleteCard);
+  // $('.delete-btn').on('click', deleteCard);
 };
 
 function markRead() {
- $('.read-btn').hasClass('read') === true ? $('.read-btn').removeClass('read') : $('.read-btn').addClass('read');
+	console.log(this)
+ $(this).toggleClass('read'); //Why doesn't global var work when targetting.
 };
 
 function deleteCard() {
@@ -46,7 +46,6 @@ function disableBtn() {
 
 function displayNumberOfCards() {
 	$('.number-of-cards').html($('.bookmark-cards').length);
-	// console.log($('.bookmark-cards').length)
 }
 
 
