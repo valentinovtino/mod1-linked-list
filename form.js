@@ -29,7 +29,7 @@ function displayCard() {
 };
 
 function markRead() {
- $('.read-btn').hasClass('read') === true ? $('.read-btn').removeClass('read'): $('.read-btn').addClass('read'); //Why doesn't global var work when targetting.
+ $('.read-btn').hasClass('read') === true ? $('.read-btn').removeClass('read') : $('.read-btn').addClass('read');
 };
 
 function deleteCard() {
@@ -49,6 +49,8 @@ function displayNumberOfCards() {
 	// console.log($('.bookmark-cards').length)
 }
 
+
+//card counter is not declared using var, is that ok???
 
 
 

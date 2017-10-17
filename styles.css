@@ -18,6 +18,16 @@ h2 {
 	margin-top: 0em;
 }
 
+h3 {
+  background-color: #4A3B4A;
+  color: #FFFFFF;
+  height: 6em;
+  width: 39em;
+  left: 0em;
+  position: absolute;
+  margin-top: -7.1em;
+}
+
 .user-submit {
   position: relative;
   left: 1.1em;
@@ -51,9 +61,9 @@ h2 {
 	background-color: #CFD8DC;
 	width: 50%;
 	height: 100vh;
-	margin-left: auto;
-  position: relative;
-  padding: 1.3em 0em 0em 0em;
+	right: 0;
+  position: absolute;
+  padding: 8.3em 0em 0em 0em;
 }
 
 .container {
@@ -125,8 +135,26 @@ h2 {
 
 .read {
 	color: #F05A28;
+  background-color: #F2F4F4;
 }
 
+.bookmark-interactions {
+  top: 0em;
+  position: absolute;
+  width: 45em;
+  height: 5em;
+  background-color: #F2F4F4;
+}
+
+.bookmark-info {
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+button.bookmark-info {
+  left: 59em;
+  top: 2em;
+}
 
 
 
