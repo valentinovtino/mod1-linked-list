@@ -53,17 +53,17 @@ h3 {
 .left-side {
 	background-color: #455A64;
 	width: 50%;
-	height: 100vh;
+	height: 100vw;
   position: absolute;
 }
 
 .right-side {
 	background-color: #CFD8DC;
 	width: 50%;
-	height: 100vh;
+	height: 100vw;
 	right: 0;
   position: absolute;
-  padding: 8.3em 0em 0em 0em;
+  padding: 0em 0em 0em 0em;
 }
 
 .container {
@@ -95,7 +95,7 @@ h3 {
 .bookmark-cards {
 	background-color: #FFFFFF;
 	border: 1px solid #607D8B;
-	margin: 0em 1.2em 1.4em 1.2em;
+	margin: 1em 1.2em 1.4em 1.2em;
 	padding: 0.6em 1.2em;
 }
 
@@ -140,7 +140,6 @@ h3 {
 
 .bookmark-interactions {
   top: 0em;
-  position: absolute;
   width: 45em;
   height: 5em;
   background-color: #F2F4F4;
