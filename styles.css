@@ -62,7 +62,8 @@ h1 {
   height: 100vw;
   right: 0;
   position: absolute;
-  padding: 0em 0em 0em 0em;
+  padding: 0em 0em 0em 0em; 
+  overflow-y: scroll;
 }
 
 .bookmark-cards {
