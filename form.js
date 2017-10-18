@@ -1,9 +1,11 @@
-  
+
 $('.user-submit').on('click', displayError);
 $('.website-input').on('keyup', disableBtn);
 $('.user-submit').on('click', displayNumberOfCards);
 $('.right-side').on('click', '.read-btn', markRead);
 $('.right-side').on('click', '.delete-btn', deleteCard);
+$('.delete-read').on('click', deleteRead);
+
 
 function displayError() {
 	if($('.website-title').val() === "" || $('.website-url').val() === "") {
@@ -46,7 +48,18 @@ function disableBtn() {
 
 function displayNumberOfCards() {
 	$('.number-of-cards').html($('.bookmark-cards').length);
-};
+}
+
+function deleteRead() {
+	if($('.read-btn').hasClass('read') === true){
+		$('.bookmark-cards').remove()
+		$('.number-of-cards').html($('.bookmark-cards').length);
+		$('.cards-read').html($('.read').length);
+		console.log(this)
+	}
+}
+
+
 
 
 
