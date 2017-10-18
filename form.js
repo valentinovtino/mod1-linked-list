@@ -48,21 +48,15 @@ function disableBtn() {
 
 function displayNumberOfCards() {
 	$('.number-of-cards').html($('.bookmark-cards').length);
-}
+};
 
 function deleteRead() {
-	if($('.read-btn').hasClass('read') === true){
-		$('.bookmark-cards').remove()
+		let readBookmarks = $('.read').parent();
+		readBookmarks.remove();
+		console.log(readBookmarks)
 		$('.number-of-cards').html($('.bookmark-cards').length);
 		$('.cards-read').html($('.read').length);
-		console.log(this)
-	}
-}
-
-
-
-
-
+};
 
 
 
