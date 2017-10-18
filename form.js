@@ -49,8 +49,10 @@ function displayNumberOfCards() {
 	$('.number-of-cards').html($('.bookmark-cards').length);
 }
 
+function deleteRead() {
+	
+}
 
-//card counter is not declared using var, is that ok???
 
 
 
