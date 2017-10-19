@@ -53,7 +53,6 @@ function displayNumberOfCards() {
 function deleteRead() {
 		let readBookmarks = $('.read').parent();
 		readBookmarks.remove();
-		console.log(readBookmarks)
 		$('.number-of-cards').html($('.bookmark-cards').length);
 		$('.cards-read').html($('.read').length);
 };
